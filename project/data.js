@@ -1,4 +1,4 @@
-[{"id":1,"first_name":"Sean","email":"sgander0@moonfruit.com","gender":"Male"},
+let users=[{"id":1,"first_name":"Sean","email":"sgander0@moonfruit.com","gender":"Male"},
     {"id":2,"first_name":"Dahlia","email":"dgowdridge1@hud.gov","gender":"Female"},
     {"id":3,"first_name":"Delcine","email":"dbulcroft2@drupal.org","gender":"Female"},
     {"id":4,"first_name":"Marlene","email":"mgodmar3@webmd.com","gender":"Female"},
@@ -1003,7 +1003,7 @@
         //alert('good morning')
          let rows="";
         for(user of users){
-            if(user.gender=="Female"){
+            if(user.gender==="Female"){
                 rows = rows + `<tr>
                  <td>${user.id}</td>
                  <td>${user.name}</td>
@@ -1012,5 +1012,5 @@
             </tr>`
         }
             }
-        document.getElementsByTagName('tbody')[0].innerHTML= 'rows'
+        document.getElementsByTagName('tbody')[0].innerHTML= rows
     }
